@@ -1,0 +1,245 @@
+@import url(header.css);
+@import url(section.css);
+@import url(footer.css);
+:root {
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+    --primary-color: #007bff; /* Màu chính */
+    --secondary-color: #6c757d; /* Màu phụ */
+    --accent-color: hsl(45, 100%, 51%); /* Màu nhấn */
+
+    --background-footer:rgb(139, 137, 137); /* Màu nền */
+    --text-color: #343a40; /* Màu chữ */
+    --color-black: #000000;
+    --color-red:#ff0000;
+    --color-yellow: #fff700;
+    --color-green:green;
+    --color-white: #ffffff;
+    --color-antiquewhite:antiquewhite;
+}
+.btn-toggle-menu {
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+.menu-icon {
+    display: none; /* Ẩn biểu tượng menu trên các thiết bị không phải di động */
+}
+
+/* CSS cho menu */
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+/* Hiển thị menu khi biểu tượng menu được nhấn */
+.btn-toggle-menu:checked ~ .menu {
+    display: block;
+}
+section{
+    width: 100vw;
+}
+/* Hiển thị theo chiều dọc trên các thiết bị di động */
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Ẩn menu ban đầu trên các thiết bị di động */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        z-index: 1000;
+        background-color:var(--color-antiquewhite);
+        transition: all ease 1s;
+    }
+    header{
+        padding: 0px;
+    background-color:var(--color-antiquewhite);
+}
+    .menu li {
+        margin: 10px;
+        text-align: center;
+        
+    }
+
+    .menu-icon {
+        display: block; /* Hiển thị biểu tượng menu trên các thiết bị di động */
+        cursor: pointer;
+    }
+    .btn-toggle-menu {
+        display: none;
+    }
+    #toggle-menu:checked + .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+    @media only screen and (max-width: 768px) {
+        .layer2 {
+          height: auto; 
+        }
+      
+        #mySlide {
+          width: 100%; /* Đưa hình ảnh về chiều rộng tối đa của container cha */
+          margin-top: 50px; /* Điều chỉnh margin top cho hình ảnh */
+          height: 450px ;
+        }
+      
+        .next>.btnleft,
+        .next>.btnright {
+          font-size: 40px; /* Điều chỉnh kích thước icon */
+        }
+        .layer3 > .sofa >a >img {
+            margin: 20px;
+            width: 320px;
+            top: 620px;
+            height: 323px;
+            position: absolute;
+            margin-left: 0px;
+            border: 1px var();
+            z-index: 0;
+        }
+        .layer3> .chair >a >  img {
+            margin: 20px;
+            top: 500px;
+            width: 160px;
+            height: 150px;
+            margin-left: 50px ;
+            position: absolute;
+            border: 1px var(--color-grey) solid;
+        
+        }
+        .layer3> .bed >a > img {
+            top: 500px;
+            margin: 20px ;
+            width: 160px;
+            height: 150px;
+            margin-left: 535px ;
+            position: absolute;
+            border: 1px var(--color-grey) solid;
+        }
+        .layer3 > .Armchair >a > img {
+            margin: 20px;
+            top: 340px;
+            width: 160px;
+            height: 150px;
+            margin-left: 350px ;
+            margin-top: 350px;
+            position: absolute;
+            border: 1px var(--color-grey) solid;
+        }
+        .layer3 >.dinnerTable >a > img {
+            margin: 20px;
+            top: 340px;
+            width: 160px;
+            height: 150px;
+            margin-left: 535px ;
+            margin-top: 350px;
+            position: absolute;
+            border: 1px var(--color-grey) solid;
+        }
+        .layer3 .text1 {
+          display: none;
+        }
+      
+        .layer4{
+            margin-top: 850px; 
+            height: 500px;
+        }
+        .layer5 {
+          margin-top: 1400px; 
+ 
+        }
+        .layer4 >.desk> .desk1 >img {
+            width: 190px;
+            height: 320px;
+            padding: 20px;
+        }
+        .layer4 > .decorations > .decor > img {
+            margin-top: 160px;
+            margin-left: 210px;
+            width: 220px;
+            height: 200px;
+            padding: 40px;
+        }
+        .layer5 > .row-collapse > .row > img {
+            margin-top: 10px;
+            margin-left: 390px;
+            width: 250px;
+            height: 350px;
+            padding: 20px;
+        }
+
+        .layer4 > .desk h1,
+        .layer4 > .desk .text1,
+        .layer4 > .desk a > .text2{
+            width: 100vw; 
+            margin-left:230px;
+            padding: 10px; 
+            text-align: left; 
+            font-size: 10px;  
+        }
+        .layer4 > .decorations h1,
+        .layer4 > .decorations .text1,
+        .layer4 > .decorations a > .text2{
+            width: 100vw; 
+            margin-left:80px;
+            padding: 10px; 
+            text-align: left; 
+            font-size: 10px;
+        }
+        .layer4 > .decorations h1{
+            margin-top: 190px;
+        }
+        .layer4 > .decorations .text1{
+            margin-top: 240px;
+        }
+        .layer4 > .decorations a > .text2{
+            margin-top: 280px;
+        }
+        .layer5 > .row-collapse h1,
+        .layer5 > .row-collapse .text1,
+        .layer5 > .row-collapse a > .text2 {
+          width: 100vw; 
+          margin-left: 0px;
+          padding: 10px; 
+          text-align: left;
+          font-size: 10px;
+        }
+        .layer6 {
+            margin-top: auto;
+        }
+      }
+@media only screen and (max-width: 768px) {
+    .footer {
+        font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+        width: auto;
+        height: 220px;
+        padding: 20px 50px;
+        background-image: url("./Images/logo.png");
+        display: flex;
+        background-position: 580px;
+        background-repeat: no-repeat;
+        background-size: 200px;
+    }
+    .footer .noi-dung {
+        margin-right: 30px;
+        display: block; 
+        font-size: 12px;
+    }
+}
+
+
+

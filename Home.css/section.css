@@ -1,0 +1,366 @@
+:root {
+    --accent-color: hsl(45, 100%, 51%);
+    --background-footer: rgb(139, 137, 137);
+    --color-black: #000000;
+    --color-green: green;
+    --color-grey: rgb(177, 177, 177);
+    --color-nhat: rgb(219, 198, 172);
+    --color-red: #ff0000;
+    --color-white: #ffffff;
+    --color-yellow: #fff700;
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+    --secondary-color: rgb(110, 112, 114);
+    --text-color: #343a40;
+}
+@font-face {
+    font-family: font-text_section;
+    src: url(./Font/HKGrotesk-Italic.eot);
+}
+@font-face {
+    font-family:HKGrotesk-Bold;
+    src: url(./Font/HKGrotesk-Bold.svg)
+}
+section {
+    background-color: var(--color-white);
+    width: 100%;
+}
+
+.layer2 {
+    font-family: HKGrotesk-Bold;
+    height: 790px;
+}
+
+.layer2>p {
+    position: absolute;
+    margin: 5px;
+    padding-top: 10px;
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#mySlide {
+    margin-top: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1490px;
+    height: 720px;
+    margin-left: 0px;
+}
+
+.next>img {
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.next>i {
+    position: absolute;
+    z-index: 1000;
+    font-size: 60px;
+    color: var(--color-black);
+}
+
+.next>i:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.next>.btnright {
+    right: 5px;
+    top: 460px;
+    margin-right: 85px;
+}
+
+.next>.btnleft {
+    left: 5px;
+    top: 460px;
+    margin-left: 85px;
+}
+
+.layer3 {
+    background-color: var(--color-grey);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.layer3>div {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.layer3>.sofa {
+    grid-row-end: span 2;
+}
+
+.layer3>.sofa>.text1 {
+    margin-top: 330px;
+}
+
+.layer3>.sofa>a>img {
+    width: 670px;
+    height: 650px;
+}
+
+.layer3>.dinnerTable img,
+.layer3>.bed img,
+.layer3>.Armchair img,
+.layer3>.chair>a>img {
+    width: 360px;
+    height: 310px;
+}
+
+.layer3>.dinnerTable img:hover,
+.layer3>.bed img:hover,
+.layer3>.Armchair img:hover,
+.layer3>.chair img:hover,
+.layer3>.sofa>a>img:hover {
+    opacity: 0.5; 
+    transition: all ease 0.5s;
+}
+
+.layer3 .text1 {
+    color: var(--color-white);
+    position: absolute;
+    font-family: font-text_section;
+    margin-left: 70px;
+}
+
+.layer4 {
+    background-color: var(--color-grey);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+
+.layer4>.desk>.desk1>img {
+    width: 500px;
+    height: 600px;
+    padding: 40px;
+    grid-row: span;
+}
+
+.layer4>.desk>.desk1>img:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.layer4>.decorations>.decor>img:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.layer5>.row-collapse>.row>img:hover {
+    opacity: 0.5;
+    transition: all ease 0.5s;
+}
+
+.layer4 h1,
+.layer5 h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--color-black);
+    position: absolute;
+    font-size: 25px;
+}
+
+.layer4 .text1,
+.layer5 .text1 {
+    font-size: 20px;
+    font-family: font-text_section;
+    position: absolute;
+    padding: 10px;
+}
+
+.layer4 a>.text2,
+.layer5 a>.text2 {
+    font-size: 20px;
+    font-family: font-text_section;
+    position: absolute;
+    border-radius: 0;
+    color: var(--color-black);
+    padding: 2px;
+}
+
+.layer4 a>.text2:hover,
+.layer5 a>.text2:hover {
+    filter: drop-shadow(10px 7px 10px var(--color-black));
+    transition: all ease 0.5s;
+}
+
+.layer4>.desk {
+    position: relative;
+}
+
+.layer4>.desk h1 {
+    margin-top: 30px;
+    margin-left: 570px;
+    width: 870px;
+    filter: drop-shadow(10px 7px 10px var(--color-red));
+}
+
+.layer4>.desk .text1 {
+    margin-top: 70px;
+    margin-left: 570px;
+    width: 870px;
+}
+
+.layer4>.desk a>.text2 {
+    margin-top: 170px;
+    margin-left: 570px;
+    width: 130px;
+}
+
+.layer4>.decorations {
+    position: relative;
+}
+
+.layer4>.decorations>.decor {
+    width: calc(100% - 58px);
+}
+
+.layer4>.decorations h1 {
+    margin-top: 330px;
+    margin-left: 110px;
+    filter: drop-shadow(10px 7px 10px var(--color-red));
+}
+
+.layer4>.decorations .text1 {
+    margin-top: 370px;
+    margin-left: 110px;
+}
+
+.layer4>.decorations a>.text2 {
+    margin-top: 440px;
+    margin-left: 270px;
+}
+
+.layer5 {
+    background-color:var(--color-white);
+    display: block;
+    width: 100%;
+}
+
+.layer5>.row-collapse {
+    position: relative;
+}
+
+.layer5>.row-collapse h1 {
+    margin-top: 190px;
+    margin-left: 110px;
+    filter: drop-shadow(10px 7px 10px var(--color-red));
+}
+
+.layer5>.row-collapse .text1 {
+    margin-top: 230px;
+    margin-left: 110px;
+}
+
+.layer5>.row-collapse a>.text2 {
+    margin-top: 400px;
+    margin-left: 500px;
+}
+
+.layer4>.decorations>.decor>img {
+    margin-top: 160px;
+    margin-left: 410px;
+    width: 450px;
+    height: 400px;
+    padding: 40px;
+}
+
+.layer5>.row-collapse>.row>img {
+    margin-top: 10px;
+    margin-left: 810px;
+    width: 650px;
+    height: 650px;
+    padding: 40px;
+}
+
+.layer6 {
+    margin-top: 30px;
+}
+
+
+/* .layer3 > .sofa >a >img {
+    margin: 20px;
+    width: 700px;
+    height: 630px;
+    position: absolute;
+    border: 1px var();
+    z-index: 0;
+}
+.layer3> .chair >a >  img {
+    margin: 20px;
+    width: 360px;
+    height: 300px;
+    margin-left: 750px;
+    position: absolute;
+    border: 1px var(--color-grey) solid;
+
+}
+.layer3> .bed >a > img {
+    margin: 20px ;
+    width: 360px;
+    height: 300px;
+    margin-left: 1140px ;
+    position: absolute;
+    border: 1px var(--color-grey) solid;
+}
+.layer3 > .Armchair >a > img {
+    margin: 20px;
+    width: 360px;
+    height: 300px;
+    margin-left: 750px;
+    margin-top: 350px;
+    position: absolute;
+    border: 1px var(--color-grey) solid;
+}
+.layer3 >.dinnerTable >a > img {
+    margin: 20px;
+    width: 360px;
+    height: 300px;
+    margin-left: 1140px;
+    margin-top: 350px;
+    position: absolute;
+    border: 1px var(--color-grey) solid;
+}
+img{
+    transform: scale(1);
+    transition: all 0.5s;
+    opacity: 1;
+}
+.layer3 .text1 {
+    font-family: 'Times New Roman', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    color: var(--color-black);
+    z-index: 1000;
+}
+.layer3 > .Armchair .text1 {
+    left: 890px;
+    top: 500px;
+}
+.layer3 >.bed .text1 {
+    left: 1290px;
+    top: 180px;
+}
+.layer3 >.chair .text1 {
+    left: 890px;
+    top: 180px;
+}
+.layer3> .dinnerTable .text1 {
+    left: 1280px;
+    top: 500px;
+}
+.layer3 >.sofa .text1 {
+    left: 310px;
+    top: 400px;
+} */

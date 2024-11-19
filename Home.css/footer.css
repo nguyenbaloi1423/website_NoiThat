@@ -1,0 +1,146 @@
+:root {
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+    --accent-color: hsl(45, 100%, 51%); /* Màu nhấn */
+    --background-footer:rgb(139, 137, 137); /* Màu nền */
+    --text-color: #343a40; /* Màu chữ */
+    --color-black: #000000;
+    --color-red:#ff0000;
+    --color-yellow: #fff700;
+    --color-green:green;
+    --color-white: #ffffff;
+    --secondary-color:rgb(110, 112, 114);
+    --color-grey:rgb(177, 177, 177);
+    --color-nhat:rgb(219, 198, 172);
+}
+@font-face {
+    font-family: HKGrotesk-black;
+    src: url(./Font/HKGrotesk-Black.svg);
+}
+@font-face {
+    font-family:HKGrotesk-Bold;
+    src: url(./Font/HKGrotesk-Bold.svg)
+}
+@font-face {
+    font-family:HKGrotesk-BoldLegacy;
+    src: url(./Font/HKGrotesk-BoldLegacy.svg);
+}
+@font-face {
+    font-family:HKGrotesk-BoldLegacyItalic;
+    src: url(./Font/HKGrotesk-BoldLegacyItalic.svg)
+}
+.footer {
+    font-family: HKGrotesk-BoldLegacyItalic;
+    width: 1399px;
+    height: 290px;
+    padding: 20px 50px;
+    background-image: url("./Images/logo.png");
+    display: flex;
+    background-position: 580px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+.footer .noi-dung {
+    margin-right: 30px;
+    display: block;
+}
+
+.footer .noi-dung.about {
+    width: 30%;
+}
+.footer .noi-dung.about p {
+    color:var(--color-black);
+}
+
+.footer .noi-dung.about h2 {
+    position: relative;
+    color:var(--color-black);
+    font-weight: 450;
+    margin-bottom: 15px;
+}
+.footer .noi-dung.about p:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color:var(--color-grey);
+}
+
+.footer .noi-dung.about h2:before {
+    content: '';
+    bottom: -5px;
+    left: 0px;
+    width: 50px;
+    height: 2px;
+}
+.links h2 {
+    position: relative;
+    color:var(--color-black);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.links h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    display: block;
+}
+
+.links {
+    width: 30%;
+}
+
+.links div p {
+    list-style: none;
+}
+
+.links div p a {
+    color:var(--color-black);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.links div p a:hover {
+    color:var(--color-red);
+}
+.contact h2 {
+    /* position: fixed; */
+    color:var(--color-black);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+}
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span {
+    color:var(--color-black);
+    text-decoration: none;
+}
+
+.contact .info li a {
+    color:var(--color-black);
+    text-decoration: none;
+}

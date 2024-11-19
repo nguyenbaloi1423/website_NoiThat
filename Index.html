@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Trang chủ</title>
+</head>
+
+<body onload="fStart();">
+    <div class="container">
+        <!--header start -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#" target="_self">
+                        <img src="./Images/logo.png" width="100px" alt="">
+                    </a>
+                </div>
+                <input type="checkbox" id="toggle-menu" class="btn-toggle-menu">
+                <div class="icon3">
+                    <label for="toggle-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                </div>
+                <!-- Sử dụng biểu tượng menu thay vì checkbox -->
+                <nav id="navbar" class="menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="product.html">Sản Phẩm</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="dangKy.html">Đăng ký</a></li>
+                    </ul>
+                </nav>
+                <div class="icon1">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="icon2">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="icon3">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!--header end -->
+
+        <!--section start -->
+        <section>
+            <div class="layer2">
+               
+                <div class="next">
+                    <i class="fa-solid fa-angle-left btnleft " onclick="fNext();"></i>
+                    <img id="mySlide" src="images/slider/Bad1.jpg" alt="">
+                    <i class="fa-solid fa-angle-right btnright " onclick="fNext();"></i>
+                </div>
+            </div>
+            <div class="layer3">
+                <div class="sofa">
+                    <div class="text1">SoFa</div>
+                    <a href="#" target="_self">
+                        <img src="./Images/ImagerSoFa/NenSoFa.jpg" alt="">
+                    </a>
+                </div>
+                <div class="dinnerTable">
+                    <div class="text1">Bàn ăn</div>
+                    <a href="#" target="_self">
+                        <img src="./Images/ImagerBanAn/NenBanAn.jpg" alt="">
+                    </a>
+                </div>
+                <div class="bed">
+                    <div class="text1">Giường</div>
+                    <a href="#" target="_self">
+                        <img src="./Images/ImagerGiuong/NenGiuong.jpg" alt="">
+                    </a>
+                </div>
+                <div class="chair">
+                    <div class="text1">ghế</div>
+                    <a href="product.html" target="_self">
+                        <img src="./Images/ImagerGhe/NenGhe.jpg" alt="">
+                    </a>
+                </div>
+                <div class="Armchair">
+                    <div class="text1">Ghế bành</div>
+                    <a href="#" target="_self">
+                        <img src="./Images/ImagerARMCHAIR/NenGheBanh.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="layer4">
+                <div class="desk">
+                    <h1>Bàn làm việc </h1>
+                    <div class="text1">Bàn làm việc phong cách hòa với thiên nhiên <br>thường được thiết kế để kết
+                        hợp với không gian tự nhiên<br> và tạo ra một môi trường làm việc thoải mái và thoải mái.</div>
+                    <a href="#">
+                        <div class="text2">Xem thêm...</div>
+                        <i class="fa-solid left"></i>
+                    </a>
+                    <div class="desk1">
+                        <img src="Images/BanLamViec/ban4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="decorations">
+                    <h1>Đồ trang trí</h1>
+                    <div class="text1">Mang lại những nguồn cảm hứng<br> và nét sinh động cho không gian..</div>
+                    <a href="#">
+                        <div class="text2">Xem thêm...</div>
+                        <i class="fa-solid left"></i>
+                    </a>
+                    <div class="decor">
+                        <img src="Images/BanLamViec/decor2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="layer5">
+                <div class="row-collapse">
+                    <h1>NỘI THẤT TINH TẾ </h1>
+                    <div class="text1">Với kinh nghiệm hơn 24 năm trong hoàn thiện nội thất<br> Nhà Xinh mang đến giải
+                        pháp
+                        toàn
+                        diện trong bao gồm thiết kế,<br> trang trí và cung cấp nội thất trọn gói.<br> Sở hữu đội ngũ
+                        chuyên
+                        nghiệp và hệ thống 10 cửa hàng<br> Nhà Xinh là lựa chọn cho không gian tinh tế và hiện đại..
+                    </div>
+                    <a href="#">
+                        <div class="text2">Xem thêm...</div>
+                        <i class="fa-solid left"></i>
+                    </a>
+                    <div class="row">
+                        <img src="Images/BanLamViec/decor3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="layer6">
+                <div class="videoDemo">
+                    <video width="100%" height="560" controls autoplay muted loop>
+                        <source src="Images/video/Cùng nhau chăm sóc ngôi nhà.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!--section end -->
+        
+        <!--footer start -->
+        <div class="footer">
+            <nav class="noi-dung about">
+                <h2>Các chính sách</h2>
+                <p>Chính sách bảo hành</p>
+                <p>Chính sách giao hàng</p>
+                <p>Chính sách bảo mật</p>
+                <p>Hướng dẫn trả góp</p>
+                <p>Hướng dẫn thanh toán</p>
+                <p>Tổng hợp khuyến mãi</p>
+            </nav>
+            <nav class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <div>
+                    <p><a href="#">Trang Chủ</a></p>
+                    <p><a href="#">Về Chúng Tôi</a></p>
+                    <p><a href="#">Thông Tin Liên Lạc</a></p>
+                    <p><a href="#">Dịch Vụ</a></p>
+                    <p><a href="#">Điều Kiện Chính Sách</a></p>
+                </div>
+            </nav>
+            <nav class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <div class="info">
+                    <li>
+                        <span>Đường Số <br />
+                            Quận , Thành Phố Hồ Chí Minh<br />
+                            Việt Nam</span>
+                    </li>
+                    <li>
+                        <p><a href="#">0564129793</a>
+                            <br />
+                            <a href="#">0366284592</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"></a>
+                        </p>loinbps22072@fpt.edu.vn
+                    </li>
+                </div>
+            </nav>
+        </div>
+        <!--footer end -->
+</body>
+</html>
+<script src="./js/LiveShow.js"></script>
+<script src="./js/Menu.js"></script>"
